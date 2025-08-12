@@ -1,0 +1,82 @@
+/* Estilos generales */
+:root {
+    --primary: #0d6efd;
+    --dark: #212529;
+    --light: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://laredmultimedia.com/wp-content/uploads/2022/04/El-auge-de-la-tecnologia-y-como-ha-transformado-nuestros-habitos-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Secciones */
+section {
+    padding: 4rem 0;
+}
+
+.bg-light {
+    background-color: var(--light) !important;
+}
+
+/* Video */
+.video-analysis {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+    padding: 0.75rem 1.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 5rem 0;
+        text-align: center;
+    }
+    
+    .display-3 {
+        font-size: 2.5rem;
+    }
+    
+    section {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-3 {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        min-height: 400px;
+    }
+}
